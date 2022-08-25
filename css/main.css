@@ -5258,7 +5258,7 @@ a {
 /*Gilroy Font Family*/
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-Light.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -5266,7 +5266,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-LightItalic.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -5274,7 +5274,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -5282,7 +5282,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-RegularItalic.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-RegularItalic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -5290,7 +5290,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -5298,7 +5298,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-MediumItalic.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-MediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -5306,7 +5306,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-Semibold.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-Semibold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -5314,7 +5314,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-SemiboldItalic.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-SemiboldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -5322,7 +5322,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-Bold.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -5330,7 +5330,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-BoldItalic.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-BoldItalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -5338,7 +5338,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-Extrabold.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-Extrabold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -5346,7 +5346,7 @@ a {
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../ersy_files/fonts/Gilroy/Gilroy-ExtraboldItalic.woff') format('woff');
+  src: url('../fonts/Gilroy/Gilroy-ExtraboldItalic.woff') format('woff');
   font-weight: 800;
   font-style: italic;
   font-display: swap;
