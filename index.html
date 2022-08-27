@@ -3,305 +3,392 @@
 <html>
 
 <head>
-        <title>Ersy.com | All Subjects &amp; Influencers Organized By A.I. &amp; Users</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" href="/css/font-awesome.min.css">
-        <link href="/css/main.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="/css/splide.min.css">
-        <link href="/css/added_style.css" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="http://ersy.com/img/favicon.png" type="img/png">
-        <link rel="icon" type="img/png" href="http://ersy.com/img/favicon.png">
-        <link rel="apple-touch-icon" href="http://ersy.com/img/webvclip.png" type="img/png">
-        <script type="text/javascript" id="www-widgetapi-script" src="/js/www-widgetapi.js" async=""></script>
-        <script src="/js/iframe_api"></script>
-        <script src="/js/jquery.js"></script>
-        <script src="/js/jquery.sumoselect.min.js"></script>
-        <script src="/js/lottie-player.js"></script>
-        <link href="/css/sumoselect.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/search.css">
-        <script src="/js/main2.js"></script>
-        <script src="/js/search.js"></script>
-        
-        <link rel="stylesheet" href="/css/dropzone.css">
-        <link href="/css/cropper.css" rel="stylesheet">
-        <script src="/js/dropzone.js"></script>
-        <script src="/js/cropper.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript">
-$(document).ready(function () {
-$('.search_artist').SumoSelect({ search: true, searchText: 'Enter artist name' });
-});
-</script>
+  <title>Ersy.com | All Subjects &amp; Influencers Organized By A.I. &amp; Users</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/splide.min.css">
+  <link href="./css/added_style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/added_modal.css">
+  <link rel="shortcut icon" href="http://ersy.com/img/favicon.png" type="img/png">
+  <link rel="icon" type="img/png" href="http://ersy.com/img/favicon.png">
+  <link rel="apple-touch-icon" href="http://ersy.com/img/webvclip.png" type="img/png">
+  <script type="text/javascript" id="www-widgetapi-script" src="./js/www-widgetapi.js" async=""></script>
+  <script src="./js/iframe_api"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.sumoselect.min.js"></script>
+  <script src="./js/lottie-player.js"></script>
+  <link href="./css/sumoselect.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/search.css">
+  <script src="./js/main2.js"></script>
+  <script src="./js/search.js"></script>
+
+  <link rel="stylesheet" href="./css/dropzone.css">
+  <link href="./css/cropper.css" rel="stylesheet">
+  <script src="./js/dropzone.js"></script>
+  <script src="./js/cropper.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.search_artist').SumoSelect({ search: true, searchText: 'Enter artist name' });
+    });
+  </script>
 </head>
 
 <body class="body" style="zoom: 1;">
-  <!--Main Content-->
-  <main class="search-page">
-        <!--Search page header-->
-        <div class="search-page__header">
-          <div class="search-page__header-wrap">
-            <div class="content__flow-right">
-              <button class="search-page__header-link" onclick="showSignUp()">Create Account</button>
-              <button class="search-page__header-link" onclick="showSignIn()">Sign In</button>
-            </div>
-          </div>
-        </div>
-        <!--Search page body-->
-        <div class="search-page__body">
-          <div class="search-page__main-wrap">
-            <div class="home-search__top">
-              <a href="/" class="search-page__logo">
-                <div class="search-page__logo-svg">
-                  <svg width="100%" height="100%" viewbox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M50 0C22.3858 0 0 22.3858 0 50V206C0 233.614 22.3858 256 50 256H206C233.614 256 256 233.614 256 206V50C256 22.3858 233.614 0 206 0H50ZM86.454 53.1794L73 45.5171V61V195V210.348L86.3943 202.854L205.394 136.277L196.606 120.568L91 179.652V146.785L156.552 108.662L170.07 100.8L156.481 93.0611L86.454 53.1794ZM133.985 100.963L91 125.962V76.4829L133.985 100.963Z"
-                      fill="currentColor">
-                    </path>
-                  </svg>
-                </div>
-                <div class="search-page__logo-name">ERSY MUSIC</div>
-                <span class="search-page__logo-sub">Largest Music Data-Base</span>
-              </a>
-            </div>
-            <div class="home-search__main">
-              <div class="home-search__form-wrap">
-                <!--Search form-->
-                <form action="search-results.html" role="search" method="get" class="home-search__form">
-                  <div class="home-search__input-wrap">
-                    <input id="main-search" type="text" class="home-search__input"
-                      placeholder="Search for artist, songs and more">
-                    <button class="main-search__btn">Search</button>
+
+
+  <!--Updated Sign Modal-->
+  <div class="modal-sign">
+    <div data-trigger="closeModal" class="modal-sign__close-wrap">
+      <div class="modal__close-svg">
+        <svg width="100%" height="100%" viewbox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.9233 13L243.423 243.5" stroke="#171C25" stroke-width="22"></path>
+          <path d="M244.076 13L13.5762 243.5" stroke="#171C25" stroke-width="22"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="modal-sign__overlay">
+      <div class="modal-sign__wrapper">
+        <div class="modal__sign-wrap">
+          <!--Sign Up container-->
+          <div class="modal__container sign-up">
+            <div class="sign-row">
+              <div class="sign-row__header">
+                <span class="sign-tag">SIGN UP FOR FREE</span>
+                <h1 class="sign-title">Create New Account</h1>
+                <span class="sign-subtitle">Do you already have an account?
+                  <span data-sign="signIn" class="sign-subtitle__switch-span">Sign In</span>
+                </span>
+              </div>
+              <div class="sign-row__body">
+                <form id="signUpForm" onsubmit="return(signup())">
+                  <div class="modal-form__row">
+                    <label class="modal-form__label">Email Address</label>
+                    <input type="email" class="modal-form__field" placeholder="Input Email Address" id="signup-email" required>
                   </div>
-                  <div class="search-overlay"></div>
-                  <!--Desktop Results container-->
-                  <div class="home-search__results">
-                    <div class="results__desktop-wrap no-scrollbar">
-                      <div class="results__desktop-container">
-                        <ul role="list" class="home-search__results-list">
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+                  <div class="modal-form__row grid">
+                    <div class="modal-form__row-half">
+                      <label class="modal-form__label">Phone Number</label>
+                      <input type="text" class="modal-form__field" placeholder="Your Phone Number" id="signup-phone" required>
+                    </div>
+                    <div class="modal-form__row-half">
+                      <label class="modal-form__label">Username</label>
+                      <input type="text" class="modal-form__field" placeholder="Your Username" id="signup-username" required>
                     </div>
                   </div>
-                  <!--Mob Results container-->
-                  <div class="home-search__mob no-scrollbar">
-                    <div class="results__mobile-wrap">
-                      <div class="results__mobile-container">
-                        <ul role="list" class="home-search__results-list">
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="search-row">
-                              <span>Taylor swift interview of all two well jimmy Fallon</span>
-                              <div class="search-delete">
-                                <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
-                                  <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
-                                </svg>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="search-gradient"></div>
+                  <div class="modal-form__row">
+                    <label class="modal-form__label">Password</label>
+                    <input type="password" class="modal-form__field" placeholder="Enter your password" id="signup-password" required>
+                  </div>
+                  <div class="modal-form__row">
+                    <input type="submit" class="modal-form__btn" value="Registe Account">
                   </div>
                 </form>
               </div>
             </div>
-            <div class="home-search__sub-links">
-              <div class="sub-link__wrap">
-                <a href="#" class="home-search__link">Artists</a>
-                <a href="#" class="home-search__link">Music Videos</a>
-                <a href="#" class="home-search__link">Interviews</a>
-                <a href="#" class="home-search__link">Lists</a>
-                <a href="#" class="home-search__link">Gallery</a>
-                <a href="#" class="home-search__link">Lists</a>
-                <a href="#" class="home-search__link">Application</a>
+          </div>
+          <!--Sign In container-->
+          <div class="modal__container sign-in">
+            <div class="sign-row">
+              <div class="sign-row__header">
+                <span class="sign-tag">SIGN UP FOR FREE</span>
+                <h1 class="sign-title">Sign In To Your Account</h1>
+                <span class="sign-subtitle">Don't have an account?
+                  <span data-sign="signUp" class="sign-subtitle__switch-span">Sign Up</span>
+                </span>
               </div>
-            </div>
-            <!--Popular searches-->
-            <div class="home-search__more">
-              <div class="home-search__more-title">Popular searches</div>
-              <div class="home-search__more-wrap">
-                <ul role="list" class="home-search__results-list">
-                  <li>
-                    <a href="#" class="home-search__more-link">
-                      <span>Lil baby do we have a problem 2022 videos</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="home-search__more-link">
-                      <span>machine Gun Kelly on the Champagne Glass Incident and His Life in Pink Documentary</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="home-search__more-link">
-                      <span>taylor swift music videos 2017 feat</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="home-search__more-link">
-                      <span>Polo G epydemic ryan linch music videos</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="home-search__more-link">
-                      <span>Taylor swift interview of all two well jimmy Fallon</span>
-                    </a>
-                  </li>
-                </ul>
+              <div class="sign-row__body">
+                <form id="signInForm" onsubmit="return(signin())">
+                  <div class="modal-form__row">
+                    <label class="modal-form__label">Email Address</label>
+                    <input type="email" class="modal-form__field" placeholder="Input Email Address" id="signin-email" required>
+                  </div>
+                  <div class="modal-form__row">
+                    <label class="modal-form__label">Password</label>
+                    <input type="password" class="modal-form__field" placeholder="Enter your password" id="signin-password" required>
+                  </div>
+                  <div class="modal-form__row">
+                    <input type="submit" class="modal-form__btn" value="Sign In">
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <footer class="search-page__footer">
-          <div class="search-page__footer-wrap">
-            <div class="content__flow-space">
-              <div class="sub__links-wrap">
-                <a href="#" class="search-page__footer-link">Terms &amp; Condition</a>
-                <a href="#" class="search-page__footer-link">Privacy Policy</a>
-                <a href="#" class="search-page__footer-link">Subscription</a>
-              </div>
-              <a href="#" class="search-page__help-link">help@ersy.com</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Main Content-->
+  <main class="search-page">
+    <!--Search page header-->
+    <div class="search-page__header">
+      <div class="search-page__header-wrap">
+        <div class="content__flow-right">
+          <button class="search-page__header-link" data-trigger="openModal" data-sign="signUp">Create Account</button>
+          <button class="search-page__header-link" data-trigger="openModal" data-sign="signIn">Sign In</button>
+        </div>
+      </div>
+    </div>
+    <!--Search page body-->
+    <div class="search-page__body">
+      <div class="search-page__main-wrap">
+        <div class="home-search__top">
+          <a href="/" class="search-page__logo">
+            <div class="search-page__logo-svg">
+              <svg width="100%" height="100%" viewbox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M50 0C22.3858 0 0 22.3858 0 50V206C0 233.614 22.3858 256 50 256H206C233.614 256 256 233.614 256 206V50C256 22.3858 233.614 0 206 0H50ZM86.454 53.1794L73 45.5171V61V195V210.348L86.3943 202.854L205.394 136.277L196.606 120.568L91 179.652V146.785L156.552 108.662L170.07 100.8L156.481 93.0611L86.454 53.1794ZM133.985 100.963L91 125.962V76.4829L133.985 100.963Z"
+                  fill="currentColor">
+                </path>
+              </svg>
             </div>
+            <div class="search-page__logo-name">ERSY MUSIC</div>
+            <span class="search-page__logo-sub">Largest Music Data-Base</span>
+          </a>
+        </div>
+        <div class="home-search__main">
+          <div class="home-search__form-wrap">
+            <!--Search form-->
+            <form action="search-results.html" role="search" method="get" class="home-search__form">
+              <div class="home-search__input-wrap">
+                <input id="main-search" type="text" class="home-search__input"
+                  placeholder="Search for artist, songs and more">
+                <button class="main-search__btn">Search</button>
+              </div>
+              <div class="search-overlay"></div>
+              <!--Desktop Results container-->
+              <div class="home-search__results">
+                <div class="results__desktop-wrap no-scrollbar">
+                  <div class="results__desktop-container">
+                    <ul role="list" class="home-search__results-list">
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--Mob Results container-->
+              <div class="home-search__mob no-scrollbar">
+                <div class="results__mobile-wrap">
+                  <div class="results__mobile-container">
+                    <ul role="list" class="home-search__results-list">
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="search-row">
+                          <span>Taylor swift interview of all two well jimmy Fallon</span>
+                          <div class="search-delete">
+                            <svg width="12px" height="12px" viewbox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L23 23" stroke="currentColor" stroke-width="2"></path>
+                              <path d="M23 1L1 23" stroke="currentColor" stroke-width="2"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="search-gradient"></div>
+              </div>
+            </form>
           </div>
-        </footer>
-      </main>
-<script src="/js/bodyScrollLock.js"></script>
-<script src="/js/script.js"></script>
-<script src="/js/initial.js"></script>
-<script src="/js/splide.min.js"></script>
+        </div>
+        <div class="home-search__sub-links">
+          <div class="sub-link__wrap">
+            <a href="#" class="home-search__link">Artists</a>
+            <a href="#" class="home-search__link">Music Videos</a>
+            <a href="#" class="home-search__link">Interviews</a>
+            <a href="#" class="home-search__link">Lists</a>
+            <a href="#" class="home-search__link">Gallery</a>
+            <a href="#" class="home-search__link">Lists</a>
+            <a href="#" class="home-search__link">Application</a>
+          </div>
+        </div>
+        <!--Popular searches-->
+        <div class="home-search__more">
+          <div class="home-search__more-title">Popular searches</div>
+          <div class="home-search__more-wrap">
+            <ul role="list" class="home-search__results-list">
+              <li>
+                <a href="#" class="home-search__more-link">
+                  <span>Lil baby do we have a problem 2022 videos</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="home-search__more-link">
+                  <span>machine Gun Kelly on the Champagne Glass Incident and His Life in Pink Documentary</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="home-search__more-link">
+                  <span>taylor swift music videos 2017 feat</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="home-search__more-link">
+                  <span>Polo G epydemic ryan linch music videos</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="home-search__more-link">
+                  <span>Taylor swift interview of all two well jimmy Fallon</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="search-page__footer">
+      <div class="search-page__footer-wrap">
+        <div class="content__flow-space">
+          <div class="sub__links-wrap">
+            <a href="#" class="search-page__footer-link">Terms &amp; Condition</a>
+            <a href="#" class="search-page__footer-link">Privacy Policy</a>
+            <a href="#" class="search-page__footer-link">Subscription</a>
+          </div>
+          <a href="#" class="search-page__help-link">help@ersy.com</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="./js/bodyScrollLock.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/initial.js"></script>
+  <script src="./js/splide.min.js"></script>
+  <script src="./js/added_modal.js"></script>
 
 
 

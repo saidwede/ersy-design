@@ -1,0 +1,243 @@
+.modal-form__btn {
+    display: inline-block;
+    width: auto;
+    color: white !important;
+    min-width: 180px;
+    padding: 12px 34px;
+    border-radius: 0px;
+    background-color: #0995c6;
+    box-shadow: 0 12px 24px 0 rgba(9, 149, 198, 0.23);
+    -webkit-transition: all 200ms cubic-bezier(.39, .575, .565, 1);
+    transition: all 200ms cubic-bezier(.39, .575, .565, 1);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-form__btn:hover {
+    background-color: #11abe0;
+    box-shadow: 0 12px 38px 0 rgba(20, 182, 238, 0.4);
+}
+
+.modal-sign__close-wrap {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-sign {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 9999;
+    display: none;
+    -webkit-transition: all 300ms cubic-bezier(.39, .575, .565, 1);
+    transition: all 300ms cubic-bezier(.39, .575, .565, 1);
+}
+
+.sign-title {
+    margin-bottom: 0px;
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.sign-subtitle__switch-span {
+    -webkit-transition: all 200ms cubic-bezier(.39, .575, .565, 1);
+    transition: all 200ms cubic-bezier(.39, .575, .565, 1);
+    color: #243447;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sign-subtitle__switch-span:hover {
+    color: #0995c6;
+    text-decoration: none;
+}
+
+.sign-subtitle {
+    margin-top: 8px;
+    color: #6f737a;
+}
+
+.sign-tag {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 4px 28px;
+    background-color: #dfdfdf;
+    color: #111929;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.modal-form__field {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    padding: 16px 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(0, 0%, 87.3%, 0);
+    border-radius: 14px;
+    -webkit-transition: all 200ms cubic-bezier(.39, .575, .565, 1);
+    transition: all 200ms cubic-bezier(.39, .575, .565, 1);
+}
+
+.modal-form__field:hover {
+    border-color: #0995c6;
+}
+
+.modal-form__field:focus {
+    border-color: #0995c6;
+}
+
+.modal__container {
+    margin-top: 0px;
+    padding: 0px;
+    -webkit-transition: all 380ms cubic-bezier(.39, .575, .565, 1);
+    transition: all 380ms cubic-bezier(.39, .575, .565, 1);
+}
+
+.modal__container.is-hidden {
+    opacity: 0;
+    -webkit-transform: translate(50px, 0px);
+    -ms-transform: translate(50px, 0px);
+    transform: translate(50px, 0px);
+}
+
+.modal__container.sign-up {
+    display: block;
+}
+
+.modal-form__row {
+    position: relative;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.modal-form__row.grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+
+.sign-row__header {
+    margin-bottom: 34px;
+}
+
+.modal-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.modal-sign__overlay {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(236, 237, 240, 0.8);
+    background-image: -webkit-gradient(linear, left top, right top, from(#f4f4f5), color-stop(57%, hsla(225, 0%, 96%, 0.8)), to(rgba(236, 237, 240, 0)));
+    background-image: linear-gradient(90deg, #f4f4f5, hsla(225, 0%, 96%, 0.8) 57%, rgba(236, 237, 240, 0));
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.modal__close-svg {
+    width: 16px;
+    height: 16px;
+}
+
+.modal-sign__wrapper {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 42px 28px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sign-row__body {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 0px;
+}
+
+.sign-row {
+    position: relative;
+}
+
+.modal__sign-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+}
+
+.modal-form__row-half {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-sign__close-wrap {
+        top: 14px;
+        right: 14px;
+        padding: 6px;
+    }
+
+    .modal-sign__wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .sign-title {
+        font-size: 28px;
+    }
+
+    .modal-sign__overlay {
+        background-image: -webkit-gradient(linear, left top, right top, from(#f4f4f5), color-stop(75%, hsla(225, 0%, 96%, 0.8)), to(rgba(236, 237, 240, 0)));
+        background-image: linear-gradient(90deg, #f4f4f5, hsla(225, 0%, 96%, 0.8) 75%, rgba(236, 237, 240, 0));
+    }
+}
